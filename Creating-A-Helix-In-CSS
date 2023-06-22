@@ -1,0 +1,10 @@
+public class CubeMovement : MonoBehaviour
+{
+    private void OnDrawGizmos()
+    {
+        for (float i = 0; i < 60; i++)
+        {
+            Gizmos.DrawCube(new Vector3(Mathf.Sqrt(i)* Mathf.Cos(i),Mathf.Sqrt(i),Mathf.Sqrt(i)* Mathf.Sin(i)),Vector3.one/10);
+        }
+    }
+}
